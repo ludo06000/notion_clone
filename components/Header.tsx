@@ -4,10 +4,10 @@ import { SignedOut, SignedIn, useUser, SignInButton, UserButton } from "@clerk/n
 
 function Header() {
     const { user } = useUser()
-    // video 34 min (https://www.youtube.com/watch?v=cso7-4oAPNQ&t=2280s)
+
   return (
-    <div>
-        { user && <h1>Hello {user?.firstName}</h1> }
+    <div className="flex items-center justify-between p-5">
+        { user && <h1 className="text-2xl">Hello {user?.firstName}</h1> }
 
         {/* breadcrumbs */}
 
